@@ -1,0 +1,6 @@
+Sikke et fint hoved dokument med titel {{titel}}
+
+Her inkluderer vi lige et dokument, hvis værdien incl = ja
+{% ifequal incl "ja" %}
+{% include "incl.html" %}
+{% endifequal %}
