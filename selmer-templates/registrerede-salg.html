@@ -1,0 +1,24 @@
+<div class="b_afs_content">
+    <div class="b_h2">1.3 Registrerede salg i nærområdet</div>
+    <div class="text">"Tekststykke, der forklarer betydningen af registrerede nabosalg. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+    <div>
+        <div class="b_slss-row">
+            <div class="b_font_weight-bold b_slss-field-short">#</div>
+            <div class="b_font_weight-bold b_slss-field-long">Adresse</div>
+            <div class="b_font_weight-bold b_slss-field-short">Handelsdato</div>
+            <div class="b_font_weight-bold b_slss-field-short">Faktisk handelspris (DKK)</div>
+        </div>
+        {% for s in salg %}
+        <div class="b_slss-row">
+            <div class="b_slss-field-short">{{s.nr}}</div>
+            <div class="b_slss-field-long">{{s.adresse}}</div>
+            <div class="b_slss-field-short">{{s.handelsdato}}</div>
+            <div class="b_slss-field-short">{{s.pris}}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

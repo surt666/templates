@@ -1,0 +1,57 @@
+<div class="b_afs_content">
+    <div class="b_h2">1 Væsentlige forhold</div>
+    <div class="text">"Tekststykke, der forklarer at vi har fokus på væsentlige forhold. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+
+    <div class="b_begrundelse-table">
+        <div class="b_begrundelse-row_b3">
+	  <div class="b_begrundelse-label-fixed-length">Opførelsesår</div>
+          <div class="b_begrundelse-label-fixed-length">Om- eller tilbygningsår</div>
+	  <div class="b_begrundelse-label-fixed-length">Samlet vægtet areal:</div>
+          <div class="b_begrundelse-label-fixed-length">Matrikuleret grundareal</div>
+          <div class="b_begrundelse-label-fixed-length">Primært tagdækningsmateriale</div>
+          <div class="b_begrundelse-label-fixed-length">Primær opvarmning</div>
+	</div>
+
+      {% for ro in delvurderinger %}
+
+        <div class="b_begrundelse-row_b3">
+          <div class="b_begrundelse-value-fixed-length">{{ro.opfoerelsesaar}}</div>
+          <div class="b_begrundelse-value-fixed-length">{{ro.omtilbygningsaar}}</div>
+          <div class="b_begrundelse-value-fixed-length">{{ro.vaegtet-areal}}</div>
+          <div class="b_begrundelse-value-fixed-length">{{ro.grundareal}}</div>
+          <div class="b_begrundelse-value-fixed-length">{{ro.tagdaekningsmateriale}}</div>
+          <div class="b_begrundelse-value-fixed-length">{{ro.opvarmning}}</div>
+        </div>
+
+      {% endfor %}
+
+        <div class="b_text b_font_style-italic">
+            *Da dette datapunkt ikke er registreret har vi indsat en standardværdi - se, hvordan vi gør det,
+            på <span>{{vurderingsstyrelsen.webadresse}}</span>. Vi opfordrer til, at du kontakter den ansvarlige myndighed og får
+            registreret værdien korrekt, da den kan have en betydelig effekt på vurderingen af din ejendom.
+        </div>
+    </div>
+    <div class="text"><p>Desuden har vi registreret disse specifikke forhold, som værende væsentlige for vurderingen af din ejendom:</p></div>
+    <div>
+        <div class="b_sls-row">
+            <div class="b_font_weight-bold b_sls-field-short">Vejareal</div>
+            <div class="b_sls-field-long">{{ejendom.vej-areal}}</div>
+            <div class="b_sls-field-short">Matriklen</div>
+        </div>
+        <div class="b_sls-row">
+            <div class="b_font_weight-bold b_sls-field-short">Afstand til kyst</div>
+            <div class="b_sls-field-long">{{ejendom.kyst-afstand}}</div>
+            <div class="b_sls-field-short">SKAT</div>
+        </div>
+    </div>
+
+    <div class="text" ><p><span class="b_font_weight-bold">Bedste anvendelse af grund:</span> [dette afsnit udarbejdes i samarbejde med grundværdi-gruppen]</p>
+        <p>Grundværdi ansættes ud fra en betragtning om at en grund anvendes til bedste økonomiske formål i økonomisk henseende.</p>
+        <p>Vurderingsstyrelsen mener at bedste anvendelse af din grund vil være i relation til:</p>
+        <span class="b_font_style-italic">Beboelse, Parcelhus</span>
+    </div>
+</div>

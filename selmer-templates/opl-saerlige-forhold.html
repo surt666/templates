@@ -1,0 +1,33 @@
+<div class="b_afs_content">
+    <div class="b_h2">1.2 Oplysninger om særlige forhold</div>
+    <div class="text">"Tekststykke, der forklarer registrerede særlige forhold. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+
+    <div><p><span class="b_font_weight-bold">Særlige forhold, vi har registreret:</span></p></div>
+
+
+    <div>
+        {% for sf in vurdering.saerlige-forhold %}
+        <div class="b_sls-row">
+            <div class="b_font_weight-bold b_sls-field-short">{{sf.label}}</div>
+            <div class="b_sls-field-long">{{sf.tekst}}</div>
+            <div class="b_sls-field-short">{{sf.off-enhed}}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div><p><span class="b_font_weight-bold">Servitutter:</span></p></div>
+
+    <div>
+        {% for s in vurdering.servitutter %}
+        <div class="b_sls-row">
+            <div class="b_font_weight-bold b_sls-field-short">{{s.label}}</div>
+            <div class="b_sls-field-long">{{s.tekst}}</div>
+            <div class="b_sls-field-short">{{s.off-enhed}}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

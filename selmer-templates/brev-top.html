@@ -1,0 +1,51 @@
+<div class="b_columns b_afs_content">
+    <div class="b_3column" >
+        <div class="b_text b_font_weight-bold">Modtager</div>
+        <div class="b_text b_addresse_linie">{{modtager.adrlinie1}}</div>
+        <div class="b_text b_addresse_linie">{{modtager.adrlinie2}}</div>
+        <div class="b_text b_addresse_linie">{{modtager.adrlinie3}}</div>
+    </div>
+    <div class="b_3column">
+        <div class="b_text b_font_weight-bold">Ejerandel</div>
+        <div class="b_text">{{modtager.ejerandel}}</div>
+    </div>
+    <div class="b_3column" >
+        <div class="b_text b_font_weight-bold">Udskrevet</div>
+        <div class="b_text">Missing dato</div>
+    </div>
+
+    <div class="b_3column" >
+        <div class="b_text b_font_weight-bold">Ejendomsidenfikation</div>
+        <div class="b_columns b_afs_content">
+            <div class="b_2column"><span>Vur.ID</span></div>
+            <div class="b_2column">{{ejendom.vurid}}</div>
+            <div class="b_2column"><span>BFE-nr.</span></div>
+            <div class="b_2column">{{ejendom.bfenr}}</div>
+            <div class="b_2column"><span>Ejendomsnr.</span></div>
+            <div class="b_2column">{{ejendom.nr}}</div>
+            <div class="b_2column"><span>Kommunenr.</span></div>
+            <div class="b_2column">{{ejendom.kommunenr}}</div>
+        </div>
+    </div>
+    <div class="b_3column" >
+        <div class="b_text b_font_weight-bold">Ejendommens beliggenhed</div>
+        <div class="b_text b_addresse_linie">{{ejendom.adrlinie1}}</div>
+        <div class="b_text b_addresse_linie">{{ejendom.adrlinie2}}</div>
+    </div>
+    <div class="b_3column">
+        <div class="b_text b_font_weight-bold">Afgørelses-ID</div>
+        <div class="b_text">{{sag.sags-id}}</div>
+    </div>
+    <div class="b_3column"></div>
+    <div class="b_3column">
+        <div class="b_text b_font_weight-bold">Matr. Nr.</div>
+        <div class="b_text">{{ejendom.matrikelnr}}</div>
+    </div>
+    <div class="b_3column"></div>
+    <div class="b_3column"></div>
+    <div class="b_3column">
+        <div class="b_text b_font_weight-bold">Ejerlav:</div>
+        <div class="b_text"> {{ejendom.ejerlavnavn}}</div>
+    </div>
+    <div class="b_3column"></div>
+</div>
