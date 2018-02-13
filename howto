@@ -1,0 +1,8 @@
+1. copy text from word document
+2. insert in word part of https://wordhtml.com
+3. go to HTML view
+4. clean HTML by pressing clean
+5. copy html to local file
+6. replace merge fields with selmer syntax, i.e. {{adresse}} to insert an adrress from the datastructure
+7. upload to the s3 letters bucket
+8. letter should now be in template list
