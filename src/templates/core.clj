@@ -45,3 +45,8 @@
                {:nr 3 :adresse "Vejnavn 7, Kbh" :handelsdato "10/3-2011" :pris 1200000}
                {:nr 3 :adresse "Vejnavn 4, Kbh" :handelsdato "10/3-2008" :pris 1300000}
                {:nr 3 :adresse "Vejnavn 3, Kbh" :handelsdato "10/3-2002" :pris 1400000}]})
+
+(def b1 {:henvendelses-dato "28/12-2017"
+         :adresse "Vejlands Alle 151, 2300 København"
+         :frist "30/1-2018" ;calculate today + 20 days
+         })
